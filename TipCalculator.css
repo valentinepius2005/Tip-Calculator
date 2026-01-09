@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.app {
+    width: 420px;
+    padding: 30px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(18px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.9rem;
+}
+
+.field {
+    margin-bottom: 18px;
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 6px;
+    opacity: 0.9;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.18);
+    color: #ffffff;
+    font-size: 15px;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+input[type="range"] {
+    padding: 0;
+    height: 6px;
+    accent-color: #38bdf8;
+    cursor: pointer;
+}
+
+select option {
+    color: #000;
+}
+
+.output {
+    margin-top: 25px;
+    padding: 18px;
+    border-radius: 14px;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.output div {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+.output strong {
+    font-size: 16px;
+}
+
+.highlight {
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.highlight strong {
+    color: #38bdf8;
+    font-size: 18px;
+}

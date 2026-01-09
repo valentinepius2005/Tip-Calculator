@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Tip Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="TipCalculator.css">
+</head>
+<body>
+
+<main class="app">
+    <h1>Smart Tip Calculator</h1>
+
+    <div class="field">
+        <label>Bill Amount (₹)</label>
+        <input type="number" id="bill" placeholder="0.00" min="0">
+    </div>
+
+    <div class="field">
+        <label>
+            Tip Percentage
+            <span id="tipValue">15%</span>
+        </label>
+        <input type="range" id="tip" min="0" max="100" value="15">
+    </div>
+
+    <div class="field">
+        <label>Number of People</label>
+        <input type="number" id="people" min="1" value="1">
+    </div>
+
+    <div class="field">
+        <label>Rounding Option</label>
+        <select id="rounding">
+            <option value="0">Exact Amount</option>
+            <option value="1">Round to ₹1</option>
+            <option value="5">Round to ₹5</option>
+        </select>
+    </div>
+
+    <section class="output">
+        <div>
+            <span>Tip Amount</span>
+            <strong id="tipAmount">₹0.00</strong>
+        </div>
+        <div>
+            <span>Total Bill</span>
+            <strong id="totalBill">₹0.00</strong>
+        </div>
+        <div class="highlight">
+            <span>Per Person</span>
+            <strong id="perPerson">₹0.00</strong>
+        </div>
+    </section>
+</main>
+
+<script src="TipCalculator.js"></script>
+</body>
+</html>
